@@ -58,7 +58,6 @@ const skillGroups = [
     items: [
       { name: "Node.js", level: 82 },
       { name: "Express.js", level: 80 },
-      { name: "Flask", level: 78 },
       { name: "REST API Design", level: 85 },
     ],
   },
@@ -112,7 +111,7 @@ const services = [
   {
     icon: Server,
     title: "Backend Development",
-    desc: "Flask-based REST API development for dynamic, data-driven apps.",
+    desc: "Node.js and Express-based REST API development for dynamic, data-driven apps.",
   },
   {
     icon: Layers,
@@ -222,12 +221,12 @@ function Hero() {
               Hi, I'm <span className="text-gradient animate-gradient">Nikhil Kumar Singh</span>
             </h1>
             <p className="mt-5 text-xl md:text-2xl text-muted-foreground">
-              Aspiring Software Developer •{" "}
-              <span className="text-foreground">Python & Web Developer</span>
+              Full-Stack Developer •{" "}
+              <span className="text-foreground">Python & MERN Enthusiast</span>
             </p>
             <p className="mt-5 max-w-xl text-base text-muted-foreground leading-relaxed">
-              Aspiring Software Developer passionate about building modern web applications,
-              Python projects, and practical digital solutions.
+              Computer Engineering graduate passionate about building modern web applications
+              and turning ideas into clean, practical digital solutions.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
@@ -244,7 +243,7 @@ function Hero() {
                 <Mail className="h-4 w-4" /> Contact Me
               </a>
               <a
-                href="/nik_resume.pdf"
+                href="/Nikhil_Kumar_Singh_Resume.pdf"
                 download
                 className="inline-flex items-center gap-2 rounded-xl border border-violet-500/40 px-6 py-3 font-medium text-violet-200 hover:bg-violet-500/10 transition-colors"
               >
@@ -269,12 +268,12 @@ function Hero() {
           <div className="flex justify-center md:justify-end animate-fade-up" style={{ animationDelay: "150ms" }}>
             <div className="relative">
               <div className="absolute -inset-6 rounded-full bg-gradient-to-tr from-violet-500 via-blue-500 to-fuchsia-500 blur-2xl opacity-60 animate-pulse-glow" />
-              <div className="relative h-72 w-72 md:h-96 md:w-96 rounded-full glow-border overflow-hidden bg-gradient-to-br from-violet-900 to-blue-900 grid place-items-center">
-                <div className="absolute inset-0 grid-bg opacity-30" />
-                <div className="relative text-center px-6">
-                  <div className="text-7xl md:text-8xl font-bold text-gradient">NS</div>
-                  <div className="mt-2 text-xs text-muted-foreground font-mono">profile.placeholder</div>
-                </div>
+              <div className="relative h-72 w-72 md:h-96 md:w-96 rounded-full glow-border overflow-hidden">
+                <img
+                  src="/mu%20my%20image.jpeg"
+                  alt="Nikhil Kumar Singh"
+                  className="h-full w-full object-cover"
+                />
               </div>
               {/* floating tech chips */}
               {/* floating tech chips */}
@@ -283,9 +282,6 @@ function Hero() {
               </div>
               <div className="absolute -bottom-3 -right-2 glass rounded-xl px-3 py-2 text-xs font-mono animate-float-slow">
                 🐍 Python
-              </div>
-              <div className="absolute top-1/2 -right-6 glass rounded-xl px-3 py-2 text-xs font-mono animate-float">
-                ⚡ Flask
               </div>
               <div className="absolute top-8 -right-10 glass rounded-xl px-3 py-2 text-xs font-mono animate-float-slow hidden sm:block">
                 🟢 Node.js
@@ -344,19 +340,19 @@ function About() {
             <div className="glass rounded-2xl p-8 space-y-4 text-muted-foreground leading-relaxed">
               <p>
                 I'm <span className="text-foreground font-semibold">Nikhil Kumar Singh</span>,  a
-                Computer Engineering student and an aspiring{" "}
+                Computer Engineering graduate and{" "}
                 <span className="text-foreground font-semibold">Full Stack Developer</span>{" "}
                 passionate about building modern web applications, working across the
                 MERN stack, and solving real-world problems through clean, efficient code.
               </p>
               <p>
                 I enjoy building responsive web applications, developing REST APIs
-                with Node.js and Flask, and integrating databases like MongoDB.
+                with Node.js and Express, and integrating databases like MongoDB.
                 My focus stays on writing clean, maintainable, and user-friendly solutions
                 while continuously exploring new technologies.
               </p>
               <div className="flex flex-wrap gap-2 pt-4">
-                {["Python", "React.js", "Flask", "REST APIs", "SQL", "Git"].map((t) => (
+                {["Python", "React.js", "Node.js", "REST APIs", "SQL", "Git"].map((t) => (
                   <span
                     key={t}
                     className="rounded-full bg-violet-500/10 border border-violet-500/30 px-3 py-1 text-xs font-mono text-violet-200"
@@ -586,8 +582,8 @@ function Experience() {
       desc: "Building hands-on experience through academic and personal projects, focused on shipping practical, user-friendly solutions.",
     },
     {
-      title: "Web & Python Practitioner",
-      desc: "Working with Python, React.js, Flask, REST APIs, and SQL to design responsive applications end-to-end.",
+      title: "Full-Stack Explorer",
+      desc: "Diving deep into the MERN stack alongside Python, turning ideas into functional, scalable web applications.",
     },
     {
       title: "Continuous Learner",
